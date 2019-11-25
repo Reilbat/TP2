@@ -13,7 +13,7 @@
   </div>
 </body>
 <script>
-	$('#show-metrics').click((e) => {
+  $('#show-metrics').click((e) => {
   e.preventDefault();
   $.getJSON("/metrics.json", {}, (data) => {
     const content = data.map(d => {
